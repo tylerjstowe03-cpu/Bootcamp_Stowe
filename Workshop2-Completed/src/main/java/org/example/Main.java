@@ -29,12 +29,12 @@ public class Main {
         books[18] = new Book(19, "978019", "If You Give a Mouse a Cookie", false, "");
         books[19] = new Book(20, "978020", "Biscuit", true, "");
 
-
         while (choice != 3) {
             System.out.println("Neighborhood Library");
             System.out.println("1) Available Books");
             System.out.println("2) Checked Out Books");
             System.out.println("3) Exit");
+
 
             System.out.println("Enter your selection: ");
             if (scanner.hasNextInt()) {
