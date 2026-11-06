@@ -1,0 +1,24 @@
+Home Menu
+- D — Add Deposit: Enter a description, vendor, and amount for money received.
+- P — Make Payment: Record money spent.
+- L — Ledger: View and filter saved transactions.
+- X — Exit: Close the application.
+Ledger Menu
+- A — All Transactions: Show all entries, newest first.
+- D — Deposits: Show positive transactions.
+- P — Payments: Show negative transactions.
+- R — Reports: Open the reports menu.
+- H — Home: Return to the main menu.
+Reports Menu
+- 1 — Month To Date
+- 2 — Previous Month
+- 3 — Year To Date
+- 4 — Previous Year
+- 5 — Search By Vendor
+- X — Back to Ledger (as currently implemented)
+
+How to Run the Project
+1. Make sure src/main/resources/transactions.csv exists. Run the application from the project root folder so the relative file paths work.
+2. Open src/main/java/org/example/Main.java.
+3. Run the main() method in the Main class.
+4. Type one of the menu letters or numbers and press Enter. Follow the prompts to record or view transactions.

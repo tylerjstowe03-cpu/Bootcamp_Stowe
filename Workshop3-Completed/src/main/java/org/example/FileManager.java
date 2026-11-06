@@ -3,14 +3,13 @@ package org.example;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.io.InputStreamReader;
 
 public class FileManager {
     public static List<Product> getProduct(){
         List<Product> products = new ArrayList<>();
 
         try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(FileManager.class.getClassLoader().getResourceAsStream("products.csv")));
+            BufferedReader reader = new BufferedReader(new FileReader("src/main/resources/products.csv"));
             String line;
 
             while ((line = reader.readLine()) != null) {
@@ -45,7 +44,7 @@ public class FileManager {
                 fileWriter.write(System.lineSeparator());
             }
             fileWriter.write(String.format("%s|%s|%.2f|%s", product.getId(),
-                    product.getName(), product.getDepartment(), product.getPrice()));
+                    product.getName(), product.getPrice(), product.getDepartment()));
             fileWriter.close(); }
         catch(IOException ex){
             System.out.println("Error writing to file."); }
