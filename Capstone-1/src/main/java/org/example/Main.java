@@ -46,13 +46,14 @@ public class Main {
         System.out.println("D) Add Deposit");
         System.out.println("P) Make Payment");
         System.out.println("L) Ledger");
-        System.out.println("X) Exit");
+        System.out.println("\u001B[31mX) Exit\u001B[0m");
         System.out.println("<======================================>");
         System.out.print("Insert a option: "); }
 
     public static void ledgerMenu() {
         boolean running = true;
         while (running) {
+            System.out.println("<======================================>");
             System.out.println("\u001B[32m                 Ledger\u001B[0m");
             System.out.println("<======================================>");
             System.out.println("A) All Transactions");
@@ -114,7 +115,8 @@ public class Main {
             System.out.println("\u001B[32mTransaction completed!\u001B[0m"); }
 
     public static void showTransactions(String type) {
-        System.out.println("           Transactions");
+        System.out.println("<======================================>");
+        System.out.println("\u001B[32m           Transactions\u001B[0m");
         System.out.println("<======================================>");
         boolean found = false;
 
@@ -217,7 +219,8 @@ public class Main {
     public static void statementReports() {
         boolean running = true;
         while (running) {
-            System.out.println("               Reports");
+            System.out.println("<======================================>");
+            System.out.println("\u001B[32m               Reports\u001B[0m");
             System.out.println("<======================================>");
             System.out.println("1) Month To Date");
             System.out.println("2) Previous Month");
